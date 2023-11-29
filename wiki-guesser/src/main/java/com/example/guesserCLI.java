@@ -10,6 +10,7 @@ public class guesserCLI {
     private static String scoreWrapperText = " is your final score.";
     private boolean isUserReady;
     private boolean isGameInstanceOver;
+    private guessingGame currentGame;
 
     public guesserCLI() {
         isUserReady = false;
@@ -30,8 +31,7 @@ public class guesserCLI {
                         System.out.println("\nThe game will start\n");
                         isUserReady = true;
                         isValidInput = true;
-                        // TODO
-                        //guessingGame game = new guessingGame();
+                        currentGame = new guessingGame();
                     } else if (ready.equalsIgnoreCase("N")) {
                         System.out.println("The game will not start\n");
                         isValidInput = true;
@@ -42,9 +42,10 @@ public class guesserCLI {
                         break;
                     }
                 }
-                    //Code for game logic  
+                    //Code for game logic
+                    currentGame.playGame(input);
                     
-                    System.out.println(game.score + scoreWrapperText + "\n-----------------------------\n");
+                    System.out.println(currentGame.pointsGetter() + scoreWrapperText + "\n-----------------------------\n");
 
 
                     isUserReady = false;
