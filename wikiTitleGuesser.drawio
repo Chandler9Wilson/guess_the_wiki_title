@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-11-28T18:56:06.366Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="TmnNZlxlxh11TRyUTVYb" version="22.1.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-29T03:49:29.645Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="UCTxFu-T9zpztKBqzPaE" version="22.1.4" type="github">
   <diagram name="Page-1" id="EFEkAJhTeCXNV-3pVWG8">
-    <mxGraphModel dx="1185" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="819" dy="447" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -17,28 +17,28 @@
           <mxGeometry y="88" width="230" height="26" as="geometry" />
         </mxCell>
         <mxCell id="9oxp4Z833f7QPe40c3l9-5" value="guesserCLI" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="310" y="30" width="230" height="140" as="geometry" />
+          <mxGeometry x="310" y="30" width="230" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="9oxp4Z833f7QPe40c3l9-6" value="+ introText: string&lt;br&gt;+ scoreWrapperText: string&lt;br&gt;+ isUserReady: bool&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ isGameInstanceOver: bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9oxp4Z833f7QPe40c3l9-5">
-          <mxGeometry y="26" width="230" height="64" as="geometry" />
+        <mxCell id="9oxp4Z833f7QPe40c3l9-6" value="+ introText: string&lt;br&gt;+ scoreWrapperText: string&lt;br&gt;+ isUserReady: bool&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ isGameInstanceOver: bool&lt;br&gt;+ currentGame: guessingGame" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9oxp4Z833f7QPe40c3l9-5">
+          <mxGeometry y="26" width="230" height="84" as="geometry" />
         </mxCell>
         <mxCell id="9oxp4Z833f7QPe40c3l9-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="9oxp4Z833f7QPe40c3l9-5">
-          <mxGeometry y="90" width="230" height="8" as="geometry" />
+          <mxGeometry y="110" width="230" height="8" as="geometry" />
         </mxCell>
         <mxCell id="9oxp4Z833f7QPe40c3l9-8" value="+ startGame(): void // Wrapper around guessingGames constructor" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9oxp4Z833f7QPe40c3l9-5">
-          <mxGeometry y="98" width="230" height="42" as="geometry" />
+          <mxGeometry y="118" width="230" height="42" as="geometry" />
         </mxCell>
         <mxCell id="9oxp4Z833f7QPe40c3l9-9" value="guessingGame" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="20" y="96" width="230" height="130" as="geometry" />
+          <mxGeometry x="50" y="78" width="230" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="9oxp4Z833f7QPe40c3l9-10" value="+ numberOfGuesses: int&lt;br&gt;+ summaryWrapperText: string&lt;br&gt;+ article: wikiArticle" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9oxp4Z833f7QPe40c3l9-9">
-          <mxGeometry y="26" width="230" height="54" as="geometry" />
+        <mxCell id="9oxp4Z833f7QPe40c3l9-10" value="+ numberOfGuesses: int&lt;br&gt;+ summaryWrapperText: string&lt;br&gt;+ isGameOver: bool&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ article: wikiArticle" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9oxp4Z833f7QPe40c3l9-9">
+          <mxGeometry y="26" width="230" height="74" as="geometry" />
         </mxCell>
         <mxCell id="9oxp4Z833f7QPe40c3l9-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="9oxp4Z833f7QPe40c3l9-9">
-          <mxGeometry y="80" width="230" height="8" as="geometry" />
+          <mxGeometry y="100" width="230" height="8" as="geometry" />
         </mxCell>
         <mxCell id="9oxp4Z833f7QPe40c3l9-12" value="+ isGuessCorrect(string): bool&lt;br&gt;+&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9oxp4Z833f7QPe40c3l9-9">
-          <mxGeometry y="88" width="230" height="42" as="geometry" />
+          <mxGeometry y="108" width="230" height="42" as="geometry" />
         </mxCell>
         <mxCell id="9oxp4Z833f7QPe40c3l9-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="9oxp4Z833f7QPe40c3l9-13" target="9oxp4Z833f7QPe40c3l9-17">
           <mxGeometry relative="1" as="geometry" />
